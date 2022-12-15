@@ -1,0 +1,44 @@
+body {
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page-wrapper {
+  display: flow-root;
+  max-width: 100rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 5rem;
+}
+html {
+background-color: yellow;
+  background: url(beach.jpg) center center/ cover no-repeat;
+  height: 100%;
+}
+.content {
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+.content h1 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem;
+}
+.content p {
+  font-family: 'Roboto Mono', monospace;
+}
+.gallery {
+  display: flex;
+  flex-flow: wrap;
+  margin-top: 5rem;
+  margin-left: 300px;
+  background: white 0.7;
+
+}
+.gallery figure{
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+}
+.gallery img {
+  display: block;
+  height:200px;
+}

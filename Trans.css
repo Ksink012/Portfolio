@@ -1,0 +1,70 @@
+body {
+  background-size: cover;
+  background-attachment: fixed;
+}
+.page-wrapper {
+  display: flow-root;
+  max-width: 100rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 5rem;
+}
+.logo {
+  font: 30px/1 'Ubuntu', sans-serif;
+  letter-spacing: 3px;
+  color: White;
+  padding: 0 3rem;
+  padding-right: 30rem;
+  position: fixed;
+  margin-top:10px;
+}
+.logo p{
+  line-height: 20%;
+}
+
+
+.content{
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+.content h1 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 1rem;
+}
+.content p {
+  font-family: 'Roboto Mono', monospace;
+}
+.gallery {
+  position: absolute;
+	top: 128px;
+	left: 231px;
+  padding-bottom: 80px;
+	z-index: -1;
+  }
+  .gallery > figure{
+    float: left;
+  }
+.gallery img{
+  height: 500px;
+}
+.gallery figure {
+  float: left;
+  padding: 5px;
+  flex: 33.33%;
+  padding: 5px;
+  margin-left: 20rem;
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    margin-left: 40px;
+  }
+  .gallery{
+    margin: 40px 0;
+  }
+  .logo{
+    position: static;
+    text-align: center;
+    padding: 20px 0;
+  }
+}

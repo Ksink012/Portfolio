@@ -1,0 +1,80 @@
+body {
+  background: url("Image/Homepage/Home_background_S.png") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.logo {
+  font: 30px/1 'Ubuntu', sans-serif;
+  letter-spacing: 3px;
+  color: DarkKhaki;
+  padding: 0 0 0 3rem;
+  position: fixed;
+  top: 30px;
+
+}
+
+.logo p {
+  line-height: 20%;
+}
+
+/*=========================================== */
+.gallery {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 20rem;
+
+}
+
+.gallery figure {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+}
+
+.gallery img {
+  display: block;
+  height: 200px;
+}
+
+.gallery a {
+  color: transparent;
+  text-decoration: none;
+
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  transition: 0.5s ease-in-out;
+}
+
+.gallery a:hover {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.gallery figure img {
+  flex: 0 0 auto;
+  height: 150px;
+}
+
+@media screen and (max-width: 750px) {
+  .logo{
+    position: static;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .gallery{
+    margin: 40px 0;
+  }
+  .gallery div {
+    display: none;
+  }
+}
